@@ -1,0 +1,16 @@
+#promo {
+  background: url(/src/assets/img/xad.png);
+  text-align: center;
+  padding: 100px;
+}
+
+#img {
+  position: relative;
+  height: 200px;
+}
+
+#divmare {
+  background-color: initial;
+}
+
+

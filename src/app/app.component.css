@@ -1,0 +1,6 @@
+.div-1 {
+  background-color: revert;
+}
+.gradient {
+  background-image: linear-gradient(to right, rgb(255,225,179),rgb(251,206,206));
+}
