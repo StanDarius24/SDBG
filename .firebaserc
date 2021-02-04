@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "salondivabng": {
+      "hosting": {
+        "SalonDivaBnG": [
+          "salondivabng"
+        ]
+      }
+    }
+  }
+}

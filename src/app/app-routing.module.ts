@@ -3,10 +3,12 @@ import {RouterModule, Routes} from '@angular/router';
 import { CommonModule } from '@angular/common';
 import {AboutusComponent} from './component/aboutus/aboutus.component';
 import {HomepageComponent} from './component/homepage/homepage.component';
+import {OferteComponent} from "./component/oferte/oferte.component";
 
 const routes: Routes = [
   { path: 'home', component: HomepageComponent },
   { path: 'aboutus', component: AboutusComponent },
+  { path: 'oferte', component: OferteComponent},
   { path: '', redirectTo: '/home' , pathMatch: 'full' },
   ];
 
