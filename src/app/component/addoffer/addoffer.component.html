@@ -1,0 +1,21 @@
+<div fxFlex="100%">
+<main class="page contact-us-page" style="height: 1600px">
+  <section class="clean-block clean-form dark">
+    <div class="container">
+      <div class="block-heading">
+        <h2 class="text-info">Adauga o oferta</h2>
+        <p>Aici putem adauga o imagine pentru oferta prin apasarea butonului upload, selectarea acesteia, apoi putem adauga si un text, ceva scurt. Apasam butonul Send pentru a posta oferta</p>
+      </div>
+      <form>
+        <div class="form-group">
+          <input type="file" (change)="upload($event)" accept="*.png.jpg" id="">
+        </div>
+        <div class="form-group"><label>Message</label><textarea style="height: 200px" class="form-control"></textarea></div>
+        <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Send</button></div>
+      </form>
+    </div>
+  </section>
+</main>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>

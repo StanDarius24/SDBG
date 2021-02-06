@@ -17,6 +17,10 @@ export class HeaderComponent implements OnInit {
     {
       this.router.navigate(['oferte']).then();
     }
+  navigate2()
+  {
+    this.router.navigate(['addoffer']).then();
+  }
 
 
 }

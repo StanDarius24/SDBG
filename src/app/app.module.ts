@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AboutusComponent } from './component/aboutus/aboutus.component';
 import { OferteComponent } from './component/oferte/oferte.component';
 import {environment} from "../environments/environment";
+import { AddofferComponent } from './component/addoffer/addoffer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {environment} from "../environments/environment";
     HeaderComponent,
     FooterComponent,
     AboutusComponent,
-    OferteComponent
+    OferteComponent,
+    AddofferComponent
   ],
   imports: [
     BrowserModule,
