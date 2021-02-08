@@ -4,6 +4,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularFireModule } from '@angular/fire';
 
+
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './component/homepage/homepage.component';
 import { HeaderComponent } from './component/header/header.component';
@@ -13,6 +14,7 @@ import { AboutusComponent } from './component/aboutus/aboutus.component';
 import { OferteComponent } from './component/oferte/oferte.component';
 import {environment} from "../environments/environment";
 import { AddofferComponent } from './component/addoffer/addoffer.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { AddofferComponent } from './component/addoffer/addoffer.component';
     AppRoutingModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

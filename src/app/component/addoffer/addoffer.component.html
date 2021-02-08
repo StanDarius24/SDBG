@@ -4,14 +4,14 @@
     <div class="container">
       <div class="block-heading">
         <h2 class="text-info">Adauga o oferta</h2>
-        <p>Aici putem adauga o imagine pentru oferta prin apasarea butonului upload, selectarea acesteia, apoi putem adauga si un text, ceva scurt. Apasam butonul Send pentru a posta oferta</p>
+        <p>Aici putem adauga o imagine pentru oferta prin apasarea butonului choose file, selectarea acesteia, apoi putem adauga si un text, ceva scurt. Apasam butonul Send pentru a posta oferta</p>
       </div>
       <form>
         <div class="form-group">
           <input type="file" (change)="upload($event)" accept="*.png.jpg" id="">
         </div>
-        <div class="form-group"><label>Message</label><textarea style="height: 200px" class="form-control"></textarea></div>
-        <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Send</button></div>
+        <div class="form-group"><label>Message</label><textarea [(ngModel)]="Nume" style="height: 200px" class="form-control"></textarea></div>
+        <div class="form-group"><button class="btn btn-primary btn-block" (click)="create()" type="submit">Send</button></div>
       </form>
     </div>
   </section>

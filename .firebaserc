@@ -1,11 +1,5 @@
 {
-  "targets": {
-    "salondivabng": {
-      "hosting": {
-        "SalonDivaBnG": [
-          "salondivabng"
-        ]
-      }
-    }
+  "projects": {
+    "default": "salondivabg"
   }
 }
