@@ -8,10 +8,12 @@
       </div>
       <form>
         <div class="form-group">
-          <input type="file" (change)="upload($event)" accept="*.png.jpg" id="">
+          <input type="file" (change)="upload($event)" id="">
+          <label>Message</label>
+          <input type="text" [(ngModel)]="Nume" name="Nume">
+
+          <button class="btn btn-primary btn-block" (click)="create()" type="submit">Send</button>
         </div>
-        <div class="form-group"><label>Message</label><textarea [(ngModel)]="Nume" style="height: 200px" class="form-control"></textarea></div>
-        <div class="form-group"><button class="btn btn-primary btn-block" (click)="create()" type="submit">Send</button></div>
       </form>
     </div>
   </section>

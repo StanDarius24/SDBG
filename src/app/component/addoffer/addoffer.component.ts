@@ -22,19 +22,27 @@ export class AddofferComponent implements OnInit {
   ngOnInit(): void {
   }
   upload(e) :void {
-    console.log(e);
-    if(e.target.files)
+
+
+    if(e.target.files[0])
     {
       this.path = e.target.files[0];
       var reader = new FileReader();
-      reader.readAsDataURL(e.target.file[0]);
+      reader.readAsDataURL(e.target.files[0]);
+
       reader.onload=(event2:any)=>{
         this.url=event2.target.result
       };
     }
   }
+
+
+
+
+
   create() :void
   {
+    console.log(this.Nume);
     const fpath = "/file" + this.Nume ;
 
     const fileref = this.firebasestorage.ref(fpath);
