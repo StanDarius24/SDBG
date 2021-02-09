@@ -17,6 +17,7 @@ export class AddofferComponent implements OnInit {
   downloadURL: Observable<string>;
   url:string;
   fb:string ="E gol";
+  numberR:number;
   constructor(public firebaseservice:FirebasestorageService,public route:ActivatedRoute, public firebasestorage:AngularFireStorage) { }
 
   ngOnInit(): void {
@@ -42,8 +43,9 @@ export class AddofferComponent implements OnInit {
 
   create() :void
   {
+
     console.log(this.Nume);
-    const fpath = "/file" + this.Nume ;
+    const fpath = "/file" + Math.floor(Math.random() * Math.floor(1000)); ;
 
     const fileref = this.firebasestorage.ref(fpath);
 
