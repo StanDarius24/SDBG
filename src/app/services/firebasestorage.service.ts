@@ -11,4 +11,9 @@ export class FirebasestorageService {
   {
     return this.fireservices.collection('Offer').add(Record);
   }
+
+  get_Offer()
+  {
+    return this.fireservices.collection('Offer').snapshotChanges();
+  }
 }

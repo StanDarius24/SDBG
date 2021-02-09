@@ -3,13 +3,13 @@
   color: #4b4c4d;
   position: absolute;
   left: 0;
-  bottom: -800px;
+  bottom: 0;
   width: 100%;
 
 }
 
 .footer-basic ul {
-  padding: 0;
+
   list-style: none;
   text-align: center;
   font-size: 18px;
