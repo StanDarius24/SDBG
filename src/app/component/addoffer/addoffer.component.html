@@ -9,9 +9,18 @@
       <form>
         <div class="form-group">
           <input type="file" (change)="upload($event)" id="">
-          <label>Message</label>
+          <br>
+          <br>
+          <h1>Nume</h1>
+
           <textarea matInput type="text" [(ngModel)]="Nume" name="Nume" style="width: 500px; height: 200px">
           </textarea>
+          <br>
+          <h1>Descriere</h1>
+
+          <textarea matInput type="text" [(ngModel)]="Descriere" name="Descriere" style="width: 500px; height: 200px">
+          </textarea>
+          <br>
           <button class="btn btn-primary btn-block" (click)="create()" type="submit">Send</button>
         </div>
       </form>

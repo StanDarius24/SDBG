@@ -24,9 +24,13 @@ export class SingleofferComponent implements OnInit {
         return {
           Nume: e.payload.doc.data()['Nume'],
           URL: e.payload.doc.data()['URL'],
+          Descriere: e.payload.doc.data()['Descriere'],
         }
-      }).filter(data => data.Nume == this.nume);
+      }).filter(data => data.Nume === this.nume);
+      console.log(this.offer);
     });
+
+
   }
 
 }

@@ -12,6 +12,7 @@ import {finalize} from "rxjs/operators";
 })
 export class AddofferComponent implements OnInit {
   Nume:string;
+  Descriere:string;
   path:string;
   Message:string;
   downloadURL: Observable<string>;
@@ -80,12 +81,14 @@ export class AddofferComponent implements OnInit {
     var nst="                            ";
     Record['Nume'] = this.Nume+nst;
     Record['URL'] = this.fb;
+    Record['Descriere'] = this.Descriere;
     console.log(Record);
     this.Message="Produs adaugat";
     this.firebaseservice.create_NewOffer(Record).then(
       res=>{
         this.Nume="";
         this.fb="";
+        this.Descriere="";
         console.log(res);
         this.Message="Data Saved!";
       }
