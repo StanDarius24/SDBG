@@ -3,7 +3,6 @@
   color: #4b4c4d;
   position: absolute;
   left: 0;
-  bottom: 0;
   width: 100%;
 
 }
@@ -33,7 +32,7 @@
 
 .footer-basic .social {
   text-align: center;
-  padding-bottom: 25px;
+
 }
 
 .footer-basic .social > a {
@@ -55,7 +54,7 @@
 }
 
 .footer-basic .copyright {
-  margin-top: 15px;
+
   text-align: center;
   font-size: 13px;
   color: #aaa;

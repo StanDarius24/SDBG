@@ -13,13 +13,17 @@ export class HeaderComponent implements OnInit {
   }
 
 
-    navigate()
-    {
+  navigate()
+  {
       this.router.navigate(['oferte']).then();
-    }
+  }
   navigate2()
   {
     this.router.navigate(['addoffer']).then();
+  }
+  navigate3()
+  {
+    this.router.navigate(['aboutus']).then();
   }
 
 

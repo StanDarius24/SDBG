@@ -1,23 +1,18 @@
-<section></section>
-<div></div>
-<div></div>
 <div class="team-boxed">
   <div class="container">
     <div class="intro">
       <h2 class="text-center">Salon Diva B&G </h2>
       <p class="text-center">Oferte si reduceri</p>
     </div>
-    <div *ngFor="let prod of product">
     <div class="row people">
+      <div *ngFor="let prod of product">
       <div class="col-md-6 col-lg-4 item">
         <div class="box">
           <img class="imageClass rounded-circle" [src]="prod.URL" style="cursor: pointer;"/>
-          <p class="title">OFERTA</p>
           <p class="description">{{prod.Nume}}</p>
         </div>
       </div>
-    </div>
-
+      </div>
 
     </div>
   </div>

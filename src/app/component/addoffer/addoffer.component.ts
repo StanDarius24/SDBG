@@ -77,8 +77,8 @@ export class AddofferComponent implements OnInit {
   adaugarea()
   {
     let Record={};
-
-    Record['Nume'] = this.Nume;
+    var nst="                            ";
+    Record['Nume'] = this.Nume+nst;
     Record['URL'] = this.fb;
     console.log(Record);
     this.Message="Produs adaugat";
