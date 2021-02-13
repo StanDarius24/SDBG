@@ -8,7 +8,7 @@
       <div *ngFor="let prod of product">
       <div class="col-md-6 col-lg-4 item">
         <div class="box">
-          <img class="imageClass rounded-circle" [src]="prod.URL" style="cursor: pointer;"/>
+          <img class="imageClass rounded-circle" (click)="gotooffer(prod.Nume)" [src]="prod.URL" style="cursor: pointer;"/>
           <p class="description">{{prod.Nume}}</p>
         </div>
       </div>

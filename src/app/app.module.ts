@@ -15,6 +15,7 @@ import { OferteComponent } from './component/oferte/oferte.component';
 import {environment} from "../environments/environment";
 import { AddofferComponent } from './component/addoffer/addoffer.component';
 import {FormsModule} from "@angular/forms";
+import { SingleofferComponent } from './component/singleoffer/singleoffer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {FormsModule} from "@angular/forms";
     FooterComponent,
     AboutusComponent,
     OferteComponent,
-    AddofferComponent
+    AddofferComponent,
+    SingleofferComponent
   ],
   imports: [
     BrowserModule,

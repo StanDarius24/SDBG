@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FirebasestorageService} from "../../services/firebasestorage.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-oferte',
@@ -8,7 +9,7 @@ import {FirebasestorageService} from "../../services/firebasestorage.service";
 })
 export class OferteComponent implements OnInit {
   product:any;
-  constructor(public firebaseservices:FirebasestorageService) { }
+  constructor(private firebaseservices:FirebasestorageService, private router:Router) { }
 
   ngOnInit(): void {
     this.firebaseservices.get_Offer().subscribe(data =>{
@@ -20,6 +21,11 @@ export class OferteComponent implements OnInit {
       });
       console.log(this.product);
     })
+  }
+
+  gotooffer(text:string)
+  {
+    this.router.navigate(['singleoffer',text]).then();
   }
 
 }

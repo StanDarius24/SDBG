@@ -5,6 +5,7 @@ import {AboutusComponent} from './component/aboutus/aboutus.component';
 import {HomepageComponent} from './component/homepage/homepage.component';
 import {OferteComponent} from "./component/oferte/oferte.component";
 import {AddofferComponent} from "./component/addoffer/addoffer.component";
+import {SingleofferComponent} from "./component/singleoffer/singleoffer.component";
 
 const routes: Routes = [
   { path: 'home', component: HomepageComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'oferte', component: OferteComponent},
   { path: 'addoffer', component: AddofferComponent},
   { path: '', redirectTo: '/home' , pathMatch: 'full' },
+  { path: 'singleoffer/:name', component:SingleofferComponent },
   ];
 
 @NgModule({
